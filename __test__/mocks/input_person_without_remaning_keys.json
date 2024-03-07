@@ -1,0 +1,10 @@
+{
+  "name": "",
+  "rooms": ["", "", "#", "#"],
+  "age": "#",
+  "gender": "",
+  "companies": {
+    "name": "#",
+    "document": ""
+  }
+}
