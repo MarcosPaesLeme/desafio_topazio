@@ -33,19 +33,15 @@ apresento o payload de entrada e o esperado na saída para ilustrar o processo d
 
 ## Comandos do projeto
 
-Buildar o projeto - `npm run build`
+Formatar o código- `npm run lint:fix`
 
-Formatar o código- `npm run format`
-
-Desenvolvimento local - `npm run start:dev`
-
-Lintar o código - `npm run start:dev`
+Lintar o código - `npm run lint:check`
 
 Rodar os testes - `npm run test`
 
 ## Testes
 
-Como executar os testes
+Para executar os testes, rodar o seguinte comando, `npm run test` 
 
 ## Contato do time
 
