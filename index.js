@@ -19,15 +19,15 @@
 const removeFields = (payload, charactersToRemove) => {
   const newData = {};
 
-  const doesNotContainSpecialCharacters = (value) => {
-    return !charactersToRemove.includes(value);
+  const containsSpecialCharacters = (value) => {
+    return charactersToRemove.includes(value);
   };
 
   for (const [key, value] of Object.entries(payload)) {
-    if (doesNotContainSpecialCharacters(value)) {
+    if (!containsSpecialCharacters(value)) {
       if (Array.isArray(value)) {
         const filteredArray = value.filter((item) =>
-          doesNotContainSpecialCharacters(item),
+          !containsSpecialCharacters(item),
         );
         if (filteredArray.length > 0) {
           newData[key] = filteredArray;
